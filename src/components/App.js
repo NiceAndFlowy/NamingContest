@@ -10,13 +10,13 @@ class App extends Component {
     contests: this.props.initialContests
   };
   componentDidMount() {
-    axios.get('/api/contests')
-      .then(res => {
-        this.setState({
-          contests: res.data.contests
-        });
-      })
-      .catch(console.error);
+    // axios.get('/api/contests')
+    //   .then(res => {
+    //     this.setState({
+    //       contests: res.data.contests
+    //     });
+    //   })
+    //   .catch(console.error);
     
   }
   render() {
